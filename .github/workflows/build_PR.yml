@@ -29,7 +29,7 @@ jobs:
       - name: Calculate mutation score
         working-directory: .
         run: |
-          # fail the build if mutation score is less than 80%
+          # fail the build if mutation score is less than 10%
           mvn test-compile org.pitest:pitest-maven:mutationCoverage -DmutationThreshold=80
   
       - name: Generate JaCoCo Badge
