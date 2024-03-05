@@ -69,6 +69,14 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+		<plugin>
+			<groupId>org.pitest</groupId>
+			<artifactId>pitest-maven</artifactId>
+			<version>1.15.8</version>
+			<configuration>
+				<testPlugin>JUNIT5</testPlugin>
+			</configuration>
+		</plugin>
       </plugins>
     </pluginManagement>
   </build>
